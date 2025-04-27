@@ -1,0 +1,246 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+}
+
+.flag {
+    width: 24px;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sale {
+    color: red;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    font-size: 20px;
+}
+
+/* Hero */
+.hero {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+.slide.active {
+    display: block;
+}
+
+/* New Arrivals */
+.new-arrivals {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.product-card {
+    background: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product-card p {
+    color: #000;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icons div {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-input {
+    display: none;
+    padding: 5px 10px;
+    font-size: 14px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.icons.active .search-input {
+    display: inline-block;
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1;
+    font-size: 14px;
+    color: #666;
+}
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+  }
+  
+  .lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+  
+  .close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Back to Top Button */
+  .back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #e63946;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 1500;
+  }
+  
+
+/* Fancy Loader with Logo */
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5000;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  /* Loader Logo */
+  .loader-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    animation: pulse 1.5s infinite;
+    margin-bottom: 20px;
+  }
+  
+  /* Loading Text */
+  .loading-text {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    color: #333;
+    animation: fadeIn 2s ease infinite alternate;
+  }
+  
+  /* Pulse Animation */
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+  }
+  
+  /* FadeIn Text Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
+  
+  /* FadeIn Text Animation */
+  @keyframes fadeIn {
+    0% { opacity: 0.5; }
+    100% { opacity: 1; }
+  }
+  
