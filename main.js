@@ -1,4 +1,4 @@
-// Automatic Slider
+
 let slides = document.querySelectorAll('.slide');
 let index = 0;
 
@@ -15,17 +15,17 @@ document.getElementById('searchIcon').addEventListener('click', function() {
     document.getElementById('searchInput').focus();
 });
 
-// Wishlist Click
+
 document.getElementById('wishlistIcon').addEventListener('click', function() {
     alert("Wishlist clicked!");
 });
 
-// Cart Sidebar Toggle
+
 const cartIcon = document.getElementById('cartIcon');
 cartIcon.addEventListener('click', () => {
   alert('🛒 Your cart is currently empty!');
 });
-// Click Product to Add to Cart
+
 const products = document.querySelectorAll('.product-card');
 products.forEach(product => {
   product.addEventListener('click', () => {
@@ -33,7 +33,7 @@ products.forEach(product => {
   });
 });
 
-// Lightbox Popup on Product Image Click
+
 products.forEach(product => {
   product.querySelector('img').addEventListener('click', (e) => {
     e.stopPropagation(); // Stop parent click
@@ -49,7 +49,7 @@ products.forEach(product => {
   });
 });
 
-// Hide Navbar on Scroll Down
+
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
 
@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
   lastScrollTop = scrollTop;
 });
 
-// Back to Top Button
+
 const backToTopBtn = document.createElement('button');
 backToTopBtn.textContent = '↑ Top';
 backToTopBtn.className = 'back-to-top';
@@ -81,7 +81,7 @@ backToTopBtn.addEventListener('click', () => {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-// Fake Loading Screen
+
 window.addEventListener('load', () => {
   const loader = document.createElement('div');
   loader.className = 'loader';
@@ -95,5 +95,5 @@ window.addEventListener('load', () => {
     loader.style.opacity = 0;
     loader.style.transform = 'scale(1.2)';
     setTimeout(() => loader.remove(), 600);
-  }, 2000); // loader stays for 2s
+  }, 2000); 
 });
