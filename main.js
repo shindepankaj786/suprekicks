@@ -44,6 +44,7 @@ document.getElementById('cartIcon').addEventListener('click', function () {
 
 
 
+
 // Hide Navbar on Scroll Down
 let lastScrollTop = 0;
 const navbar = document.querySelector('.navbar');
@@ -114,3 +115,4 @@ window.addEventListener('load', () => {
       qtyInput.value = value - 1;
     }
   });
+
