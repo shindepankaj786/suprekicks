@@ -41,9 +41,6 @@ document.getElementById('cartIcon').addEventListener('click', function () {
 });
 
 // Product card click (optional)
-const products = document.querySelectorAll('.product-card');
-products.forEach(product => {
-});
 
 
 
