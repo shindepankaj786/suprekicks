@@ -122,5 +122,3 @@ window.addEventListener('load', () => {
     }
   });
 
-
-
