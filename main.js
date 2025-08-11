@@ -42,6 +42,12 @@ document.getElementById('cartIcon').addEventListener('click', function () {
 
 // Product card click (optional)
 
+const menuToggle = document.getElementById("menuToggle");
+const iconContainer = document.getElementById("iconContainer");
+
+menuToggle.addEventListener("click", () => {
+  iconContainer.classList.toggle("active");
+});
 
 
 
@@ -115,5 +121,6 @@ window.addEventListener('load', () => {
       qtyInput.value = value - 1;
     }
   });
+
 
 
