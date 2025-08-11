@@ -7,22 +7,51 @@
 
 /* Navbar */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: white;
 }
 
 .left-section {
     display: flex;
     align-items: center;
 }
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.menu-toggle span {
+  background: black;
+  height: 3px;
+  width: 25px;
+  border-radius: 2px;
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .icons {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
 
+  .icons.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+}
 .flag {
     width: 24px;
 }
@@ -32,7 +61,9 @@
     font-size: 24px;
     text-align: center;
 }
-
+.logo-img {
+  height: 40px;
+}
 .nav-links {
     display: flex;
     gap: 20px;
@@ -53,9 +84,7 @@
 .icons {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  font-size: 30px;
-  position: relative;
+  gap: 15px;
 }
 
 .search-icon i,
@@ -75,14 +104,10 @@
 
 /* Search input animation */
 .search-input {
-  width: 0;
-  opacity: 0;
-  padding: 6px 10px;
-  font-size: 16px;
+  display: none;
+  padding: 5px 10px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  outline: none;
-  transition: width 0.3s ease, opacity 0.3s ease;
+  border-radius: 4px;
 }
 
 .icons.active .search-input {
@@ -586,6 +611,7 @@ body {
   margin-top: 40px;
   margin-bottom: 20px;
 }
+
 
 
 
